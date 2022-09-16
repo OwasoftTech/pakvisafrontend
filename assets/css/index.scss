@@ -1,0 +1,271 @@
+$headerbg: #024751;
+$fontcolor: #e8eaed;
+$fontcolor2: #777777;
+$hover: #37b721;
+$login: #024751;
+$pink: #ff2c63;
+$orange: #fdc703;
+$red: #f73859;
+$price: #0b244f;
+$addaddedcol:#afafaf;
+$textColor:#61797d;
+
+.advanceBooking {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.6)), url('../images/background/aeroplane.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 537px;
+    padding-top: 153.6px;
+}
+.resultFound {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.6)), url('../images/background/boatbg.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 400px;
+    padding-top: 173.6px;
+}
+.whitecolHeading {
+    color: white;
+}
+
+.whitecolPara {
+    color: white;
+}
+
+.futureCardButtons {
+    font-size: 2em;
+    .owl-prev,
+    .owl-next {
+        width: 3rem;
+        aspect-ratio: 1;
+        margin: 5px;
+        border: none;
+        border: $hover solid 1px;
+        background-color: transparent;
+        color: $hover !important;
+
+        &:hover {
+            background-color: $hover;
+            color: #fff !important;
+            border: $hover solid 1px;
+        }
+    }
+}
+.heading {
+    color: $pink;
+}
+
+.title {
+    color: #0b244f;
+
+    span {
+        color: $hover;
+    }
+}
+
+// Feather card 
+.cardFuture {
+    a {
+        color: $fontcolor2;
+    }
+
+    .card-title {
+        color: #0b244f;
+    }
+
+    &:hover .card-title {
+        color: $hover;
+    }
+
+    .companyLogo {
+        max-width: 50px;
+    }
+
+    &:hover {
+        box-shadow: 0 8px 12px 0 rgba(212, 213, 216, 0.75);
+    }
+}
+
+.analyticIcon {
+    background-color: #1b191971;
+    border-radius: 10%;
+}
+
+.verify {
+    color: $hover;
+}
+
+.location {
+    color: $hover;
+}
+
+
+.box {
+    width: 77px;
+    height: 86px;
+    position: relative;
+}
+
+.box2 {
+    width: 77px !important;
+    height: 86px !important;
+    position: relative !important;
+}
+
+.ribbon {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    overflow: hidden;
+    width: 81px;
+    height: 76px;
+    text-align: center;
+}
+
+.ribbon span {
+    font-size: 8px;
+    color: #808080;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 15px;
+    transform: rotate(-45deg);
+    width: 108px;
+    display: block;
+    background: white;
+    background: white;
+    position: absolute;
+    top: 15px;
+    left: -33px
+}
+
+.ribbon span::before {
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    z-index: -1;
+}
+
+.ribbon span::after {
+    position: absolute;
+    right: 0px;
+    top: 100%;
+    z-index: -1;
+}
+
+.ribbon2 {
+    position: absolute;
+    left: -5.3%;
+    top: 0px;
+    z-index: 1;
+    overflow: hidden;
+    width: 81px;
+    height: 76px;
+    text-align: center;
+}
+
+.ribbon2 span {
+    font-size: 8px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 15px;
+    transform: rotate(45deg);
+    width: 108px;
+    display: block;
+    background: $red;
+    background: $red;
+    position: absolute;
+    top: 18px;
+    left: 0px;
+}
+
+.ribbon2 span::before {
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    z-index: -1;
+}
+
+.ribbon2 span::after {
+    position: absolute;
+    right: 0px;
+    top: 100%;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    transition: 0.5s ease;
+    height: 35%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+.footerGallery{
+    img{
+        border-radius: 10px;
+    }
+}
+.newFeatures{
+    background-image: url("/assets/images/background/texture2.png");
+    background-size: cover;
+}
+.email {
+    background-color: $hover;
+
+    &:hover {
+        background-color: #fff !important;
+        border: $hover solid 1px !important;
+        color: $hover !important;
+    }
+}
+
+.call {
+    border: $hover 1px solid;
+    color: $hover !important;
+
+    &:hover {
+        background-color: $hover !important;
+        color: $fontcolor !important;
+    }
+}
+.textColor{
+    color:$textColor;
+}
+.categoryBg{
+    background-image: url("/assets/images/background/texture.png");
+    background-size: cover;
+}
+.cardCategory{
+    height: 196.2px;
+    border-radius: 15.6px;
+    box-shadow: 0 10px 8px 0 rgba(226, 229, 232, 0.65);
+    border-bottom: 4px solid transparent;
+    h4{
+    color: black !important;
+    }
+}
+
+.searchArea {
+    box-shadow: 0 8px 12px 0 rgba(212, 213, 216, 0.75);
+    background-color: #fff;
+    z-index: 100;
+    transform: translateY(-100px);
+    margin-bottom: -100px;
+
+    select {
+        background-color: #f8f8f8;
+    }
+    a{
+        background-color: $hover;
+        border: $hover solid 1px;
+        text-decoration: none;
+        &:hover{
+            background-color: #fff;
+            border: $hover solid 1px;
+            color: $hover !important;
+        }
+    }
+}

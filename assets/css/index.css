@@ -1,0 +1,254 @@
+.advanceBooking {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.6)), url("../images/background/aeroplane.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 537px;
+  padding-top: 153.6px;
+}
+
+.resultFound {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.6)), url("../images/background/boatbg.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 400px;
+  padding-top: 173.6px;
+}
+
+.whitecolHeading {
+  color: white;
+}
+
+.whitecolPara {
+  color: white;
+}
+
+.futureCardButtons {
+  font-size: 2em;
+}
+.futureCardButtons .owl-prev,
+.futureCardButtons .owl-next {
+  width: 3rem;
+  aspect-ratio: 1;
+  margin: 5px;
+  border: none;
+  border: #37b721 solid 1px;
+  background-color: transparent;
+  color: #37b721 !important;
+}
+.futureCardButtons .owl-prev:hover,
+.futureCardButtons .owl-next:hover {
+  background-color: #37b721;
+  color: #fff !important;
+  border: #37b721 solid 1px;
+}
+
+.heading {
+  color: #ff2c63;
+}
+
+.title {
+  color: #0b244f;
+}
+.title span {
+  color: #37b721;
+}
+
+.cardFuture a {
+  color: #777777;
+}
+.cardFuture .card-title {
+  color: #0b244f;
+}
+.cardFuture:hover .card-title {
+  color: #37b721;
+}
+.cardFuture .companyLogo {
+  max-width: 50px;
+}
+.cardFuture:hover {
+  box-shadow: 0 8px 12px 0 rgba(212, 213, 216, 0.75);
+}
+
+.analyticIcon {
+  background-color: rgba(27, 25, 25, 0.4431372549);
+  border-radius: 10%;
+}
+
+.verify {
+  color: #37b721;
+}
+
+.location {
+  color: #37b721;
+}
+
+.box {
+  width: 77px;
+  height: 86px;
+  position: relative;
+}
+
+.box2 {
+  width: 77px !important;
+  height: 86px !important;
+  position: relative !important;
+}
+
+.ribbon {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  overflow: hidden;
+  width: 81px;
+  height: 76px;
+  text-align: center;
+}
+
+.ribbon span {
+  font-size: 8px;
+  color: #808080;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 15px;
+  transform: rotate(-45deg);
+  width: 108px;
+  display: block;
+  background: white;
+  background: white;
+  position: absolute;
+  top: 15px;
+  left: -33px;
+}
+
+.ribbon span::before {
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  z-index: -1;
+}
+
+.ribbon span::after {
+  position: absolute;
+  right: 0px;
+  top: 100%;
+  z-index: -1;
+}
+
+.ribbon2 {
+  position: absolute;
+  left: -5.3%;
+  top: 0px;
+  z-index: 1;
+  overflow: hidden;
+  width: 81px;
+  height: 76px;
+  text-align: center;
+}
+
+.ribbon2 span {
+  font-size: 8px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 15px;
+  transform: rotate(45deg);
+  width: 108px;
+  display: block;
+  background: #f73859;
+  background: #f73859;
+  position: absolute;
+  top: 18px;
+  left: 0px;
+}
+
+.ribbon2 span::before {
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  z-index: -1;
+}
+
+.ribbon2 span::after {
+  position: absolute;
+  right: 0px;
+  top: 100%;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  transition: 0.5s ease;
+  height: 35%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+
+.footerGallery img {
+  border-radius: 10px;
+}
+
+.newFeatures {
+  background-image: url("/assets/images/background/texture2.png");
+  background-size: cover;
+}
+
+.email {
+  background-color: #37b721;
+}
+.email:hover {
+  background-color: #fff !important;
+  border: #37b721 solid 1px !important;
+  color: #37b721 !important;
+}
+
+.call {
+  border: #37b721 1px solid;
+  color: #37b721 !important;
+}
+.call:hover {
+  background-color: #37b721 !important;
+  color: #e8eaed !important;
+}
+
+.textColor {
+  color: #61797d;
+}
+
+.categoryBg {
+  background-image: url("/assets/images/background/texture.png");
+  background-size: cover;
+}
+
+.cardCategory {
+  height: 196.2px;
+  border-radius: 15.6px;
+  box-shadow: 0 10px 8px 0 rgba(226, 229, 232, 0.65);
+  border-bottom: 4px solid transparent;
+}
+.cardCategory h4 {
+  color: black !important;
+}
+
+.searchArea {
+  box-shadow: 0 8px 12px 0 rgba(212, 213, 216, 0.75);
+  background-color: #fff;
+  z-index: 100;
+  transform: translateY(-100px);
+  margin-bottom: -100px;
+}
+.searchArea select {
+  background-color: #f8f8f8;
+}
+.searchArea a {
+  background-color: #37b721;
+  border: #37b721 solid 1px;
+  text-decoration: none;
+}
+.searchArea a:hover {
+  background-color: #fff;
+  border: #37b721 solid 1px;
+  color: #37b721 !important;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,169 @@
+@font-face {
+  font-family: PlayfairBold;
+  src: url("Fonts/Playfair/PlayfairDisplay-Bold.ttf");
+  font-display: swap;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: PlayfairBold !important;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding-right: 25px;
+}
+.nav-item a {
+  color: #e8eaed !important;
+  line-height: 49px;
+  border-bottom: 3px solid transparent;
+}
+.nav-item a:hover {
+  color: white !important;
+  border-bottom: 3px solid white;
+}
+
+.login a {
+  color: #fff;
+  border-bottom: 3px solid transparent;
+}
+.login a:hover {
+  color: #fff !important;
+  border-bottom: 3px solid #fff;
+}
+
+.signup {
+  width: 93px;
+  background-color: #37b721;
+  border-radius: 4px;
+  text-align: center;
+}
+.signup a {
+  color: #e8eaed;
+  border-bottom: 3px solid transparent;
+}
+.signup a:hover {
+  color: white !important;
+}
+
+.bg-transparen {
+  transition: 0.75s ease !important;
+  background-color: transparent !important;
+}
+
+.bg-transparen.scrolled {
+  background: white !important;
+  color: black !important;
+}
+.bg-transparen.scrolled .nav-item a {
+  color: black !important;
+}
+.bg-transparen.scrolled .nav-item a:hover {
+  color: black !important;
+  border-bottom: 3px solid black;
+}
+.bg-transparen.scrolled .login a {
+  color: black;
+}
+.bg-transparen.scrolled .login a:hover {
+  color: black !important;
+  border-bottom: 3px solid black;
+}
+.bg-transparen.scrolled .signup {
+  background-color: #37b721;
+}
+.bg-transparen.scrolled .signup a {
+  color: white;
+}
+.bg-transparen.scrolled .signup a:hover {
+  color: black !important;
+}
+
+@media screen and (max-width: 991.5px) {
+  .bgcolor {
+    background-color: white !important;
+  }
+  .bgcolor a {
+    color: black !important;
+  }
+  .signup {
+    margin-top: 20px;
+  }
+}
+.topTexture {
+  background-image: url("/assets/images/background/texture3.png");
+  background-repeat: repeat-x;
+  height: 100px;
+  transform: translateY(-60px);
+  margin-bottom: -60px;
+  position: relative;
+  z-index: 10;
+}
+@media screen and (max-width: 575px) {
+  .topTexture {
+    display: none;
+  }
+}
+
+.footerTexture {
+  background-image: url("/assets/images/background/texture4.png");
+  background-repeat: repeat-x;
+  height: 100px;
+  transform: translateY(60px);
+  margin-top: -60px;
+}
+
+.footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.6)), url("/assets/images/background/footerbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer p {
+  text-align: justify;
+}
+.footer form input {
+  background-color: #232f35;
+  counter-reset: #fff;
+  outline: none;
+  border: none;
+}
+.footer form button {
+  background-color: #37b721;
+  border: #37b721 2px solid;
+  max-width: 150px;
+}
+.footer form button:hover {
+  background-color: transparent !important;
+  border: #37b721 2px solid !important;
+  color: #37b721 !important;
+}
+.footer .socialIcon a {
+  background-color: #777777;
+  border-radius: 50%;
+}
+.footer .socialIcon a:hover {
+  background-color: #37b721;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(206, 201, 201);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #37b721;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2a8d19;
+}/*# sourceMappingURL=main.css.map */
