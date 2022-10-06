@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pakvisa.com</title>
+		<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./assets/css/dashboard.css" />
+		<link rel="stylesheet" href="./assets/css/main.css" />
+		<link rel="stylesheet" href="./assets/css/dashboard_postadver.css" />
+		<link rel="stylesheet" href="./assets/css/Agencyprofile.css" />
+		<link rel="shortcut icon" href="./assets/images/Favicon/Pak visa.png" type="image/x-icon" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark navbarBgColor">
+			<div class="container-xxl">
+				<a class="navbar-brand" href="./index.html"><img src="./assets/images/Favicon/Pak visa.png" class="logoImage" alt=""  /></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item ps-3">
+							<a class="nav-link NavAncorColor px-4" aria-current="page" href="./Dashboard.html">Dashboard</a>
+						</li>
+						<li class="nav-item ps-5">
+							<a class="nav-link NavAncorColor" href="./Manage_Advert.html">Manage Advertisment</a>
+						</li>
+						<li class="nav-item ps-5">
+							<a class="nav-link NavAncorColor btn DashboardBtn" href="./Agencyprofile.html">My Account & Profile</a>
+						</li>
+						<li class="nav-item ps-5">
+							<a class="nav-link NavAncorColor" href="#">Advertise</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav mb-2 mb-lg-0 ms-lg-0 ms-5 align-items-lg-center align-items-start">
+						<li>
+							<div class="dropdown">
+								<div class="d-flex profiledrop" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="mb-0 me-3 d-flex justify-content-end NavAncorColoruser">Zafer</span>
+									<img src="./assets/images/Gallery/galleryimg1.webp" class="ProfilePic" alt="" />
+								</div>
+								<ul class="dropdown-menu dropdown-menu-end">
+									<li><a class="dropdown-item" href="#">Profile</a></li>
+									<li><a class="dropdown-item" href="#">Account Setting</a></li>
+									<br />
+									<li class="text-center">
+										<button class="logoutbtn"><a class="dropdown-item btn logoutbtn" href="./login.html">Logout</a></button>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="mainbody">
+			<div class="header">
+				<div class="container-xxl">
+					<div class="d-flex justify-content-sm-between justify-content-center flex-wrap coltainer-fluid px-4">
+						<div class="mt-3">
+							<a href="" class="btn headerButton px-3 me-3 mb-3">Cart</a>
+							<a href="" class="btn headerButton px-3 me-3 mb-3">Biling</a>
+							<a href="" class="btn headerButton px-3 me-3 mb-3">Email Alert</a>
+							<a href="" class="btn headerButton px-3 me-3 mb-3">Advertise</a>
+						</div>
+						<div class="mt-3">
+							<a href="./dashboard_postadvert.html" class="btn text-white float-end PostButton px-3 mb-3">Submit</a>
+							<a href="" class="btn text-dark mb-3">Back</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-xxl p-0 w-100 postAddMainDiv">
+				<div class="d-flex my-4">
+					<h6 class="headingColor ps-2 mb-0">New Advertisment</h6>
+					<p class="NavTextColor mb-0 ms-5">Please Enter your information and submit</p>
+				</div>
+				<nav>
+					<div class="nav nav-tabs PostAdd" id="nav-tab " role="tablist">
+						<button class="nav-link active post_BasicInfo px-5 py-3 me-2" id="nav-AgencyProfile-tab" data-bs-toggle="tab" data-bs-target="#nav-AgencyProfile" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+							<div class="d-flex">
+								<div class="basicno1 d-flex justify-content-center align-items-center me-3 mt-1">1</div>
+								<div class="">
+									<p class="mb-0 headingcolor BasicinfoTab">Agency Profile</p>
+									<p class="mb-0 font_12 basicinfodetail">Information about your Agency</p>
+								</div>
+							</div>
+						</button>
+						<button class="nav-link post_price_loc px-5 py-3 me-2" id="nav-ChangePassword-tab" data-bs-toggle="tab" data-bs-target="#nav-ChangePassword" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+							<div class="d-flex">
+								<div class="basicno2 d-flex justify-content-center align-items-center me-3 mt-1">2</div>
+								<div class="">
+									<p class="mb-0 headingcolor BasicinfoTab">Change Password</p>
+									<p class="mb-0 font_12 basicinfodetail">Change your password</p>
+								</div>
+							</div>
+						</button>
+					</div>
+				</nav>
+				<div class="tab-content pt-4 bg-white" id="nav-tabContent">
+					<!-- First Tab -->
+					<div class="tab-pane fade show active" id="nav-AgencyProfile" role="tabpanel" aria-labelledby="nav-AgencyProfile-tab" tabindex="0">
+						<div class="BasicInfoDetails">
+							<div class="basic_form ms-0 ms-md-5 ps-3">
+								<form action="" class="me-md-5 me-0">
+									<div class="mb-3 pb-4 profilelogoP d-flex align-items-center">
+										<label for="" class="form-label me-5">Agency Logo</label>
+										<div class="position-relative">
+											<label class="btn btn-default btn-file border-0 p-0">
+												<div class="custom-uploadProfile d-flex justify-content-center align-items-center">
+													<img src="./assets/images/icons/uploa2.png" alt="" />
+												</div>
+
+												<input type="file" class="d-none" required />
+											</label>
+											<div class="overlay">
+												<button class="TrashIcon d-flex justify-content-center align-items-center">
+													<i href="#" class="fa-solid fa-trash"></i>
+												</button>
+											</div>
+											<div class="overlay2">
+												<button class="PenIcon d-flex justify-content-center align-items-center">
+													<i class="fa-solid fa-pen"></i>
+												</button>
+											</div>
+										</div>
+									</div>
+
+									<div class="row m-0 w-100">
+										<div class="col-lg-6 pe-3">
+											<div class="mb-3 me-3 me-sm-5 d-md-flex align-items-center">
+												<label for="" class="form-label AllLabels1">Add Title</label>
+												<div class="row justify-content-center align-items-center w-100 m-0 g-2">
+													<input type="text" class="form-control ps-4 py-2 w-100" name="" id="" placeholder="Please Enter" />
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-6 pe-3">
+											<div class="mb-3 me-3 me-sm-5 d-md-flex align-items-center">
+												<label for="" class="form-label AllLabels1">Mobile Number</label>
+
+												<div class="row justify-content-center align-items-center w-100 m-0 g-2">
+													<div class="col-4 p-0">
+														<select class="FormDropDown form-select ps-4 py-2" name="" id="">
+															<option>+92</option>
+														</select>
+													</div>
+
+													<div class="col-8">
+														<input type="text" class="form-control ps-4 py-2 w-100" name="" id="" placeholder="1234567" />
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-6 pe-3">
+											<div class="mb-3 me-3 me-sm-5 d-md-flex align-items-center">
+												<label for="" class="form-label AllLabels1">Select Country</label>
+												<select class="FormDropDown form-select px-4 py-2 w-100" name="" id="">
+													<option>Pakistan</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-lg-6 pe-3">
+											<div class="mb-3 me-3 me-sm-5 d-md-flex align-items-center">
+												<label for="" class="form-label AllLabels1">Select Province</label>
+												<select class="FormDropDown form-select px-4 py-2 w-100" name="" id="">
+													<option>Capital</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="col-lg-6 pe-3">
+											<div class="mb-3 me-3 me-sm-5 d-md-flex align-items-center">
+												<label for="" class="form-label AllLabels1">Select City</label>
+												<select class="FormDropDown form-select px-4 py-2 w-100" name="" id="">
+													<option>Islamabad</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="col-lg-6 pe-3">
+											<div class="mb-3 me-3 me-sm-5 d-md-flex align-items-center">
+												<label for="" class="form-label AllLabels1">Select Area</label>
+												<select class="FormDropDown form-select px-4 py-2 w-100" name="" id="">
+													<option>Blue Area</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="col-lg-6 pe-3">
+											<div class="mb-3 me-3 me-sm-5 d-md-flex align-items-center">
+												<label for="" class="form-label AllLabels1">Select Sub Area</label>
+												<select class="FormDropDown form-select px-4 py-2 w-100" name="" id="">
+													<option>Blue Area</option>
+												</select>
+											</div>
+										</div>
+									</div>
+
+									<div class="row m-0 w-100">
+										<div class="col-lg-6 pe-3">
+											<div class="mb-3 me-3 me-sm-5 d-md-flex align-items-center">
+												<label for="" class="form-label AllLabels1">Email Address</label>
+												<input type="text" class="form-control ps-4 py-2 w-100" name="" id="" placeholder="Please Enter" />
+											</div>
+										</div>
+										<div class="col-lg-6 pe-3">
+											<div class="mb-3 me-3 me-sm-5 d-md-flex align-items-center">
+												<label for="" class="form-label AllLabels1">Website URL</label>
+												<input type="text" class="form-control ps-4 py-2 w-100" name="" id="" placeholder="Please Enter" />
+											</div>
+										</div>
+										<div class="col-12 pe-3">
+											<div class="mb-3 me-3 me-sm-5 d-md-flex align-items-center">
+												<label for="" class="form-label AllLabels1 me-2">Website URL</label>
+
+												<textarea class="form-control" name="" id="" rows="3" placeholder=" Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."></textarea>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-9 float-md-end mb-2">
+										<div class="line border-1 border-bottom"></div>
+									</div>
+									<div class="w-100 d-flex justify-content-center pb-4 pt-2 me-4">
+										<button type="button" class="btn PostButton px-4 py-2 me-5 ms-auto">Next</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<!-- Second Tab -->
+					<div class="tab-pane fade" id="nav-ChangePassword" role="tabpanel" aria-labelledby="nav-ChangePassword-tab" tabindex="0">
+						<div class="BasicInfoDetails">
+							<div class="basic_form ms-0 ms-md-5 ps-3">
+								<form action="" class="me-md-5 me-0">
+									<div class="row w-100">
+										<div class="col-lg-6 pe-3">
+											<div class="mb-3 me-3 me-sm-5 d-md-flex align-items-center">
+												<label for="" class="form-label AllLabels1 AllLabelspass">Current Password</label>
+												<input type="text" class="form-control ps-4 py-2 w-100" name="" id="" placeholder="Please Enter" />
+											</div>
+										</div>
+									</div>
+
+									<div class="row w-100">
+										<div class="col-lg-6 pe-3">
+											<div class="mb-3 me-3 me-sm-5 d-md-flex align-items-center">
+												<label for="" class="form-label AllLabels1 AllLabelspass">New Password</label>
+												<input type="text" class="form-control ps-4 py-2 w-100" name="" id="" placeholder="Please Enter" />
+											</div>
+										</div>
+										<div class="col-lg-6 pe-3">
+											<div class="mb-3 me-3 me-sm-5 d-md-flex align-items-center">
+												<label for="" class="form-label AllLabels1 AllLabelspass">Confirm Password</label>
+												<input type="text" class="form-control ps-4 py-2 w-100" name="" id="" placeholder="Please Enter" />
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-9 float-md-end mb-2 MARGINTOPDIV">
+										<div class="line border-1 border-bottom"></div>
+									</div>
+									<div class="w-100 d-flex justify-content-end pb-4 pt-3">
+										<button type="button" class="btn PostButton px-4 py-2 me-5 ms-auto" data-bs-toggle="modal" data-bs-target="#exampleModalOTP">Save</button>
+									</div>
+									<!-- Modal -->
+									<div class="modal fade" id="exampleModalOTP" tabindex="0" aria-labelledby="exampleModalLabel" aria-hidden="true">
+										<div class="modal-dialog m-auto modal-dialog-centered justify-content-center OTPmain">
+											<div class="modal-content OTPPopup">
+												<div class="modal-header p-4 border-bottom-0">
+													<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+												</div>
+												<div class="modal-body">
+													<div class="block-heading text-center pb-5">
+														<h2 class="greenColor">Confirm OTP</h2>
+														<p>Please verify OTP to continue...</p>
+													</div>
+													<div class="row justify-content-center flex-wrap justify-content-md-center px-0 px-sm-5 mx-0 mx-sm-5">
+														<div class="col p-0 d-flex justify-content-center mb-3">
+															<div class="d-flex justify-content-center me-2">
+																<div class="OTPVerifycode d-flex justify-content-center align-items-center">2</div>
+															</div>
+															<div class="d-flex justify-content-center me-2">
+																<div class="OTPVerifycode d-flex justify-content-center align-items-center">3</div>
+															</div>
+															<div class="d-flex justify-content-center me-2">
+																<div class="OTPVerifycode d-flex justify-content-center align-items-center">4</div>
+															</div>
+														</div>
+														<div class="col p-0 d-flex justify-content-center">
+															<div class="d-flex justify-content-center me-2">
+																<div class="OTPVerifycode d-flex justify-content-center align-items-center">5</div>
+															</div>
+															<div class="d-flex justify-content-center me-2">
+																<div class="OTPVerifycode d-flex justify-content-center align-items-center">6</div>
+															</div>
+															<div class="d-flex justify-content-center me-2">
+																<div class="OTPVerifycode d-flex justify-content-center align-items-center">7</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="w-100 d-flex pb-4 pt-4 me-4">
+														<button type="button" class="btn PostButton px-4 py-2 m-auto">Verify</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="./assets/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

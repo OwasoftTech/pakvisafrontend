@@ -1,27 +1,36 @@
 @font-face {
   font-family: PlayfairBold;
-  src: url("Fonts/Playfair/PlayfairDisplay-Bold.ttf");
+  src: url("../Fonts/Playfair/PlayfairDisplay-Bold.ttf");
   font-display: swap;
 }
+@font-face {
+  font-family: InterV;
+  src: url("../Fonts/Inter/static/Inter-Light.ttf");
+  font-display: swap;
+}
+* {
+  font-family: InterV;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: PlayfairBold !important;
+  font-family: PlayfairBold;
   font-weight: bold;
 }
 
-.nav-item {
+.mainNavItem {
   padding-right: 25px;
 }
-.nav-item a {
+.mainNavItem a {
   color: #e8eaed !important;
   line-height: 49px;
   border-bottom: 3px solid transparent;
 }
-.nav-item a:hover {
+.mainNavItem a:hover {
   color: white !important;
   border-bottom: 3px solid white;
 }
@@ -53,15 +62,23 @@ h6 {
   transition: 0.75s ease !important;
   background-color: transparent !important;
 }
+.bg-transparen .active {
+  color: white !important;
+  border-bottom: 3px solid white;
+}
 
 .bg-transparen.scrolled {
   background: white !important;
   color: black !important;
 }
-.bg-transparen.scrolled .nav-item a {
+.bg-transparen.scrolled .mainNavItem a {
   color: black !important;
 }
-.bg-transparen.scrolled .nav-item a:hover {
+.bg-transparen.scrolled .mainNavItem a:hover {
+  color: black !important;
+  border-bottom: 3px solid black;
+}
+.bg-transparen.scrolled .active {
   color: black !important;
   border-bottom: 3px solid black;
 }
@@ -86,15 +103,38 @@ h6 {
   .bgcolor {
     background-color: white !important;
   }
+  .bgcolor li {
+    width: 130px;
+  }
   .bgcolor a {
     color: black !important;
   }
   .signup {
     margin-top: 20px;
   }
+  .active {
+    color: black !important;
+  }
+  .bg-transparen .active {
+    color: black !important;
+    border-bottom: 3px solid black;
+  }
 }
+@media screen and (max-width: 991.5px) {
+  .navbarBgColor li {
+    width: 250px;
+  }
+}
+.colpink {
+  color: #ff2c63;
+}
+
+.colGreen {
+  color: #37b721;
+}
+
 .topTexture {
-  background-image: url("/assets/images/background/texture3.png");
+  background-image: url("../images/background/texture3.png");
   background-repeat: repeat-x;
   height: 100px;
   transform: translateY(-60px);
@@ -102,14 +142,9 @@ h6 {
   position: relative;
   z-index: 10;
 }
-@media screen and (max-width: 575px) {
-  .topTexture {
-    display: none;
-  }
-}
 
 .footerTexture {
-  background-image: url("/assets/images/background/texture4.png");
+  background-image: url("../images/background/texture4.png");
   background-repeat: repeat-x;
   height: 100px;
   transform: translateY(60px);
@@ -117,7 +152,7 @@ h6 {
 }
 
 .footer {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.6)), url("/assets/images/background/footerbg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.6)), url("../images/background/footerbg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -166,4 +201,9 @@ h6 {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #2a8d19;
+}
+
+.form-control:focus, .form-select:focus {
+  background-color: #f2f4f7 !important;
+  box-shadow: none !important;
 }/*# sourceMappingURL=main.css.map */

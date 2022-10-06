@@ -1,0 +1,142 @@
+body {
+  background-color: #fdfdfd;
+}
+
+.AboutusHead {
+  background-image: url("../images/Aboutus/topImage.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 153.6px;
+  padding-bottom: 70px;
+}
+
+.topTextureabout {
+  background-image: url("../images/Aboutus/textureup.png");
+  background-repeat: repeat-x;
+  height: 140px;
+  transform: translateY(-135px);
+  margin-bottom: -135px;
+  margin-top: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.KnowMoreAbout {
+  background-image: url("../images/Aboutus/knowmorebg.jpg");
+  background-repeat: no-repeat;
+  background-position: 80%;
+}
+.KnowMoreAbout p {
+  line-height: 1.75;
+}
+
+.BottomTextureabout {
+  background-image: url("../images/Aboutus/texturebottom.png");
+  background-repeat: repeat-x;
+  height: 100px;
+  transform: translateY(76px);
+  margin-top: -76px;
+  position: relative;
+  z-index: 10;
+}
+
+.FeedbackAbout {
+  background-image: url("../images/Aboutus/feedbackbd.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.titleabout {
+  color: white;
+}
+.titleabout span {
+  color: #37b721;
+}
+
+.User1img {
+  transform: translateX(25px);
+}
+
+.User2img {
+  z-index: 99;
+}
+
+.User3img {
+  transform: translateX(-25px);
+}
+
+.qoutsdiv {
+  transform: translateY(52px);
+  margin-top: -52px !important;
+}
+.qoutsdiv .rightQoute {
+  transform: translateY(85px);
+}
+
+.stars5Checked {
+  color: #ffdd00;
+}
+
+@media screen and (max-width: 510px) {
+  .Knownorebgimg img {
+    width: 80%;
+  }
+}
+.ancorcolor {
+  color: #7e8299;
+}
+
+.greenColor {
+  color: #37b721;
+}
+
+.Contactinfocards {
+  width: 314px;
+  height: 282px;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 0 rgba(186, 195, 223, 0.2);
+  background-color: #fff;
+  padding: 2.2rem !important;
+}
+
+.GetMoreInfo {
+  background-image: url("../images/Aboutus/backtexture.png");
+  background-position: 48% 12%;
+  background-repeat: no-repeat;
+}
+
+.contactus_form .inputNumber {
+  margin-left: -5px;
+}
+.contactus_form select, .contactus_form input, .contactus_form textarea {
+  background-color: #f3f6f9;
+  border-radius: 4px;
+  border: none;
+}
+.contactus_form .PostButton {
+  border: none;
+  color: white;
+  background-color: #37b721;
+}
+.contactus_form .PostButton:hover {
+  background-color: #198107 !important;
+  color: white;
+}
+
+.googleMAP {
+  border-radius: 4px;
+  width: 99%;
+  height: 100%;
+}
+
+@media screen and (max-width: 992.5px) {
+  .googleMAP {
+    height: 605px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .googleMAP {
+    width: 90%;
+    height: 500px;
+  }
+}/*# sourceMappingURL=aboutus.css.map */

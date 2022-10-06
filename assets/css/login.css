@@ -1,0 +1,55 @@
+.loginpage {
+  background-image: url("../images/background/login.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.btnlogin {
+  background-color: #37b721 !important;
+}
+.btnlogin a {
+  color: white;
+}
+.btnlogin a:hover {
+  color: white;
+}
+
+.loginForm {
+  box-shadow: 0 8px 12px 0 rgba(212, 213, 216, 0.75);
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.formLogin input {
+  background-color: #f2f4f7;
+  padding: 15px;
+  border: none;
+}
+.formLogin .form-check-input {
+  padding: 10px !important;
+  margin-top: 7px !important;
+}
+
+.straightLine {
+  height: 1px;
+  background-color: #999999;
+  margin-top: 3px;
+}
+
+.bi-google {
+  color: white;
+}
+
+.btngoogle {
+  background-color: #dc3c2a;
+}
+.btngoogle:hover {
+  background-color: #dc3c2a;
+}
+
+.btnfacebook {
+  background-color: #1877f2;
+}
+.btnfacebook:hover {
+  background-color: #1877f2;
+}/*# sourceMappingURL=login.css.map */

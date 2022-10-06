@@ -32,3 +32,10 @@ $(function () {
         margin: 20,
     });
 });
+
+
+
+
+// Radialchart
+
+			

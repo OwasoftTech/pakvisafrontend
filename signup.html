@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pakvisa.com</title>
+		<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		<link rel="stylesheet" href="./assets/css/main.css" />
+		<link rel="stylesheet" href="./assets/css/dashboard.css" />
+		<link rel="stylesheet" href="./assets/css/Agencyprofile.css">
+		<link rel="stylesheet" href="./assets/css/signup.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="./assets/images/Favicon/Pak visa.png" type="image/x-icon">
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg bg-transparen fixed-top bgcolor">
+			<div class="container-xxl">
+				<a class="navbar-brand" href="./index.html">
+					<img class="brandImg" src="./assets/images/Navbar/logo.png" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mx-auto mb-2 mb-lg-0">
+						<li class="nav-item mainNavItem">
+							<a class="nav-link" aria-current="page" href="./index.html">HOME</a>
+						</li>
+						<li class="nav-item mainNavItem">
+							<a class="nav-link" href="./aboutus.html">ABOUT</a>
+						</li>
+						<li class="nav-item mainNavItem">
+							<a class="nav-link" href="./contactus.html">CONTACT US</a>
+						</li>
+						<li class="nav-item mainNavItem">
+							<a class="nav-link" href="#">USEFUL LINKS</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav me-5 mb-2 mb-lg-0">
+						<li class="login">
+							<a class="nav-link me-3" href="./login.html">LOGIN</a>
+						</li>
+						<li class="signup">
+							<a class="nav-link" href="./signup.html">SIGN UP</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container-fluid py-5 signuppage">
+			<div class="row py-5 align-items-center">
+				<div class="col-lg-5 pb-4 d-flex justify-content-center align-items-center">
+					<div class="content ">
+						<h5 class="text-white">Sign up</h5>
+						<h1 class="colGreen">Let’s Get Started...!</h1>
+						<p class="text-white">Pleses Enter Your Details</p>
+						<h5 class="text-white">Already have an account?</h5>
+						<a href="./login.html" class="text-decoration-none">
+							<h5 class="colGreen">Please login</h5>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-6 d-flex justify-content-center align-items-center pb-0 offset-lg-1">
+					<div class="signupForm bg-white p-5 mx-1 mx-md-5 w-100">
+						<form action="" class="formSignup">
+							<div class="mb-3">
+								<label for="" class="form-label">Email Address</label>
+								<input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="Please enter your active email address" />
+							</div>
+							<div class="mb-3">
+								<label for="" class="form-label">Password</label>
+								<div class="d-flex align-items-center bgcolordark">
+									<input type="password" class="form-control w-100" name="" id="" placeholder="Min. 6 chars. with a number & a letter " />
+									<button class="border-0 bg-transparent"><i class="fa-solid fa-eye me-4"></i></button>
+								</div>
+							</div>
+							<div class="mb-3">
+								<label for="" class="form-label">Phone Number</label>
+								<div class="form-control d-flex phone p-1 border-0">
+									<select class="w-auto border-0 " name="countryCode" id="countryCode">
+										<option>
+											+92
+											<i class="flag flag-pakistan"></i>
+										</option>
+										<option>+91</option>
+										<option>+90</option>
+									</select>
+									<input type="text" class="border-0 w-100 form-control" name="phone" id="phone" aria-describedby="helpId" placeholder="3xx xxxxxxxx" />
+								</div>
+							</div>
+							<div class="mb-3">
+								<label for="" class="form-label">Select Country</label>
+								<select class="w-100" name="" id="">
+									<option value="" selected>Please Select</option>
+									<option>Pakistan</option>
+									<option>Australia</option>
+								</select>
+							</div>
+							<div class="row">
+								<div class="mb-3 col-6">
+									<label for="" class="form-label">Select Province</label>
+									<select class="w-100 p-2" name="" id="">
+										<option value="" selected>Please Select</option>
+										<option>Punjab</option>
+										<option>Sindh</option>
+									</select>
+								</div>
+								<div class="mb-3 col-6">
+									<label for="" class="form-label">Select City</label>
+									<select class="w-100 p-2" name="" id="">
+										<option value="" selected>Please Select</option>
+										<option>Rawalpindi</option>
+										<option>Islamabad</option>
+									</select>
+								</div>
+							</div>
+							<div class="row">
+								<div class="mb-3 col-6">
+									<label for="" class="form-label">Select Area</label>
+									<select class="w-100 p-2" name="" id="">
+										<option value="" selected>Please Select</option>
+										<option>Bahria</option>
+										<option>DHA</option>
+									</select>
+								</div>
+								<div class="mb-3 col-6">
+									<label for="" class="form-label">Select Sub Area</label>
+									<select class="w-100 p-2" name="" id="">
+										<option value="" selected>Please Select</option>
+										<option>PHASE-5</option>
+										<option>Sector-4</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="mb-3">
+								<label for="" class="form-label">Agency Name</label>
+								<input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Please enter your Agency Name" />
+							</div>
+							<div class="mb-3">
+								<label for="" class="form-label">Upload Agency Logo</label>
+								
+								
+								<div class="">
+									<label class="btn btn-default btn-file border-0 p-0">
+										<div class="uploadFile p-4 d-flex justify-content-center align-items-center ">
+											<img src="./assets/images/icons/uploa2.png" alt="" />
+										</div>
+										
+										<input type="file" class="d-none" required />
+									</label>
+								</div>
+							</div>
+							<div class="d-flex justify-content-center align-items-center">
+								<button class="btn text-white btnSignUp px-5 mt-4" data-bs-toggle="modal" data-bs-target="#exampleModalOTP">SIGN UP</button>
+							<!-- Modal -->
+  <div class="modal  fade" id="exampleModalOTP" tabindex="0" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog m-auto  modal-dialog-centered  justify-content-center OTPmain">
+      <div class="modal-content OTPPopup ">
+        <div class="modal-header p-4 border-bottom-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body ">
+              
+                 
+                    <div class="block-heading text-center pb-5">
+                      <h2 class="greenColor">Confirm OTP</h2>
+                      <p>Please verify OTP to continue...</p>
+                    </div>
+                    <div class="row justify-content-center flex-wrap justify-content-md-center px-0 px-sm-5 mx-0 mx-sm-5">
+                      <div class="col p-0 d-flex justify-content-center mb-3">
+                       <div class=" d-flex justify-content-center me-2">
+                        <div class="OTPVerifycode d-flex justify-content-center align-items-center ">2</div>
+                       </div>
+                       <div class=" d-flex justify-content-center me-2">
+                        <div class="OTPVerifycode d-flex justify-content-center align-items-center">3</div>
+                       </div>
+                       <div class=" d-flex justify-content-center me-2">
+                        <div class="OTPVerifycode d-flex justify-content-center align-items-center">4</div>
+                       </div>
+                      </div>
+                      <div class="col p-0 d-flex justify-content-center">
+                       <div class=" d-flex justify-content-center me-2">
+                        <div class="OTPVerifycode d-flex justify-content-center align-items-center">5</div>
+                       </div>
+                       <div class=" d-flex justify-content-center me-2">
+                        <div class="OTPVerifycode d-flex justify-content-center align-items-center">6</div>
+                       </div>
+                       <div class=" d-flex justify-content-center me-2">
+                        <div class="OTPVerifycode d-flex justify-content-center align-items-center">7</div>
+                       </div>
+                       </div>
+                  
+                    </div>
+                
+                    <div class="w-100 d-flex pb-4 pt-4 me-4">
+                      <button type="button" class="btn PostButton px-4 py-2 m-auto">Verify</button>
+                    </div>
+        </div>
+    </div>
+  </div>
+</div>
+							</div>
+
+							<div class="d-flex justify-content-evenly align-items-center mt-4">
+								<div class="w-25 straightLine"></div>
+								<div class=""><p class="colGreen text-center mb-0">Continue With</p></div>
+								<div class="w-25 straightLine"></div>
+							</div>
+							<div class="d-flex justify-content-evenly mb-5">
+								<div class="d-flex justify-content-evenly align-items-center">
+									<button class="btn text-white btngoogle d-flex align-items-center px-3 mt-4">
+										<i class="fa-brands fa-google me-2"></i>
+										Google
+									</button>
+								</div>
+								<div class="d-flex justify-content-evenly align-items-center">
+									<button class="btn text-white btnfacebook d-flex align-items-center px-3 mt-4">
+										<i class="fa-brands fa-facebook-f me-2"></i>
+										Facebook
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="topTexture w-100"></div> -->
+
+		<script src="./assets/js/bootstrap.bundle.min.js"></script>
+		<script src="./assets/js/jquery.min.js"></script>
+		<script src="./assets/js/main.js"></script>
+	</body>
+</html>

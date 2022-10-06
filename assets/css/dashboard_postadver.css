@@ -1,0 +1,165 @@
+@font-face {
+  font-family: InterV-medium;
+  src: url("../Fonts/Inter/static/Inter-Medium.ttf");
+  font-display: swap;
+}
+* {
+  font-family: InterV-medium !important;
+}
+
+body {
+  background-color: #f2f3f7;
+}
+
+.font_12 {
+  font-size: 12px;
+}
+
+.headingcolor {
+  color: #0b244f;
+}
+
+.post_BasicInfo {
+  text-align: left;
+}
+.post_BasicInfo .basicno1 {
+  color: #37b721;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: rgba(243, 246, 249, 0.9);
+  line-height: 2.43;
+}
+.post_BasicInfo .BasicinfoTab {
+  font-weight: 600;
+}
+.post_BasicInfo .basicinfodetail {
+  color: #7e8299;
+  line-height: 1.33;
+}
+
+.post_price_loc {
+  text-align: left;
+}
+.post_price_loc .basicno2 {
+  width: 30px;
+  height: 30px;
+  color: #37b721;
+  border-radius: 4px;
+  background-color: rgba(243, 246, 249, 0.9);
+  line-height: 2.43;
+}
+.post_price_loc .BasicinfoTab {
+  font-weight: 600;
+}
+.post_price_loc .basicinfodetail {
+  color: #7e8299;
+  line-height: 1.33;
+}
+
+.post_BasicInfo, .post_price_loc {
+  background-color: #f3f6f9 !important;
+  border: none !important;
+}
+
+.PostAdd {
+  border-color: #f2f3f7 !important;
+}
+
+.postAddMainDiv .active {
+  background-color: white !important;
+  border: none !important;
+}
+.postAddMainDiv .active .basicno2, .postAddMainDiv .active .basicno1 {
+  color: white !important;
+  background-color: #37b721 !important;
+}
+.postAddMainDiv .active .BasicinfoTab {
+  color: #37b721;
+}
+.postAddMainDiv .active .basicinfodetail {
+  color: #7e8299;
+}
+
+.BasicInfoDetails .font-interMed, .BasicInfoDetails p, .BasicInfoDetails input, .BasicInfoDetails label, .BasicInfoDetails select, .BasicInfoDetails textarea {
+  font-family: InterV-medium !important;
+}
+.BasicInfoDetails p, .BasicInfoDetails input, .BasicInfoDetails select, .BasicInfoDetails textarea {
+  font-size: 14px;
+  color: #7e8299;
+}
+.BasicInfoDetails input, .BasicInfoDetails select, .BasicInfoDetails textarea {
+  background-color: #f3f6f9;
+  border: none !important;
+}
+.BasicInfoDetails .AllLabels {
+  font-size: 14px;
+  color: #0b244f;
+  width: 200px;
+  margin-right: 30px;
+}
+.BasicInfoDetails .FormDropDown {
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.BasicInfoDetails .AllLabels2 {
+  margin-right: 25px;
+}
+
+.Nextbutton_Post {
+  background-color: #37b721;
+  color: white;
+}
+
+.custom-upload {
+  border: 1px dashed #37b721;
+  border-radius: 5px;
+  width: 128px;
+  height: 118px;
+  background-color: #f3f6f9;
+}
+
+.Membershipcard {
+  width: 80vw;
+  max-width: none;
+  height: auto;
+  margin: 0;
+}
+
+.itemSubs {
+  background-color: #f3f6f9;
+  border-radius: 4px;
+}
+.itemSubs .ProvidedServices {
+  color: #7e8299;
+}
+.itemSubs .ProvidedServices li {
+  line-height: 1.42;
+}
+
+.SubsButton {
+  border: none;
+  color: white;
+  background-color: #37b721;
+}
+.SubsButton:hover {
+  background-color: #198107 !important;
+  color: white;
+}
+
+.cardsSubs .active {
+  color: white !important;
+  background: linear-gradient(#64d249, #2cb707) !important;
+}
+.cardsSubs .active li {
+  color: white !important;
+}
+.cardsSubs .active .SubsButton {
+  color: #37b721 !important;
+  background-color: white !important;
+}
+.cardsSubs .active .SubsButton:hover {
+  color: #37b721 !important;
+  background-color: white !important;
+}/*# sourceMappingURL=dashboard_postadver.css.map */

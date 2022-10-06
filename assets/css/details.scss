@@ -6,7 +6,7 @@ $login: #024751;
 $pink: #ff2c63;
 $orange: #fdc703;
 $red: #f73859;
-
+$price: #0b244f;
 .bgcolor{
     background: white !important;
     color: black !important;
@@ -88,6 +88,7 @@ $red: #f73859;
 
     @media screen and (max-width:575px) {
         transform: translateY(0);
+        margin-bottom: -15px;
     }
 }
 
@@ -179,8 +180,12 @@ select {
 
 .verify {
     color: $hover;
+    transform: translateY(-15px) !important;
 }
-
+.pkrCardDiv{
+    font-family: InterV !important;
+    color: $price !important;
+}
 .location {
     color: $hover;
 }
@@ -210,18 +215,18 @@ select {
 }
 
 .ribbon span {
-    font-size: 8px;
+    font-size: 12px;
     color: #808080;
     text-transform: uppercase;
     text-align: center;
-    line-height: 15px;
+    line-height: 18px;
     transform: rotate(-45deg);
-    width: 108px;
+    width: 123px;
     display: block;
     background: white;
     background: white;
     position: absolute;
-    top: 15px;
+    top: 18px;
     left: -33px
 }
 
@@ -251,11 +256,11 @@ select {
 }
 
 .ribbon2 span {
-    font-size: 8px;
+    font-size: 12px;
     color: white;
     text-transform: uppercase;
     text-align: center;
-    line-height: 15px;
+    line-height: 17px;
     transform: rotate(45deg);
     width: 108px;
     display: block;

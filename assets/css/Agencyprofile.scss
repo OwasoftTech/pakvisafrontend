@@ -1,0 +1,82 @@
+$greencolor: #37b721;
+$ancorcolor: #7e8299;
+$colorlight: #f3f6f9;
+$colorlight_O_9: rgba(243, 246, 249, 0.9);
+$headingColor: #0b244f;
+$bodybgcol: #f2f3f7;
+
+.AllLabels1 {
+	font-size: 14px;
+	color: $headingColor;
+	width: 150px;
+	margin-right: 30px;
+}
+
+.MARGINTOPDIV {
+	margin-top: 27%;
+}
+.AllLabelspass {
+	width: 200px !important;
+}
+.custom-uploadProfile{
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 105px;
+    height: 98px;
+    background-color: $colorlight;
+box-shadow: 2px 5px 8px 0 rgba(0, 0, 0, 0.07);
+
+}
+
+.OTPVerifycode {
+	width: 63px;
+	height: 63px;
+	border-radius: 4px;
+	background-color: #f3f6f9;
+}
+.OTPPopup {
+	width: auto !important;
+}
+.OTPmain{
+max-width: none;
+}
+.overlay{ 
+    position: absolute; 
+    transition: 0.5s ease; 
+    width: 24px;
+    height: 24px;
+    top: -5px; 
+    left: 94px; 
+opacity: 1;
+}
+.overlay2{ 
+  position: absolute; 
+  transition: 0.5s ease; 
+  width: 24px;
+  height: 24px;
+  top: 83px; 
+  left: 94px; 
+opacity: 1;
+}
+.TrashIcon{
+    width: 23px;
+  height: 23px;
+  background-color:#f3f1f4;
+  border-radius: 50%;
+  border: none;
+  .fa-trash{ 
+    font-size:12px ;
+    color: #fc87a3;
+   }
+}
+.PenIcon{
+    width: 23px;
+  height: 23px;
+  background-color:#f3f1f4;
+  border-radius: 50%;
+  border: none;
+  .fa-pen{ 
+    font-size:12px ;
+    color: #009ef7;
+   }
+}

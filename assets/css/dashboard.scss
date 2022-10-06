@@ -1,0 +1,333 @@
+$greencolor: #37b721;
+$ancorcolor: #7e8299;
+$colorlight: #f3f6f9;
+$headingColor: #0b244f;
+$bodybgcol: #f2f3f7;
+$totalListing: #5267ff;
+$free: #26bfb4;
+$hot: #f94e67;
+$superhot: #865cf7;
+$boxyellow: #ffb600;
+$boxred: #f1416c;
+$hover: #268E0F;
+$fontcolor: #e8eaed;
+
+@font-face {
+	font-family: InterV-Regular;
+	src: url('../Fonts/Inter/static/Inter-Regular.ttf');
+}
+td, td p{
+	font-family: InterV-Regular !important;
+
+}
+.DashboardBtn {
+	background-color: $greencolor !important;
+	color: white !important;
+	border: none;
+	&:hover {
+		background-color: #198107 !important;
+	}
+}
+.logoImage {
+	width: 29.4px;
+	height: 35px;
+}
+.NavTextColor {
+	color: $ancorcolor;
+}
+.NavAncorColor{
+	color: white;
+}
+.greenColor {
+	color: $greencolor;
+}
+.headingColor {
+	color: $headingColor !important;
+}
+.navbarBgColor {
+	background-color: #0d161f !important;
+}
+.ProfilePic {
+	width: 33.3px;
+	height: 33.3px;
+	border-radius: 3px;
+}
+.NavAncorColoruser{
+	color: white;
+	line-height: 2.2;
+}
+.header {
+	box-shadow: 0 4px 9px 0 rgba(216, 224, 229, 0.65);
+	background-color: white;
+	margin-bottom: 9px;
+}
+.headerButton {
+	border: none;
+	background-color: $colorlight;
+	border: 1px solid transparent;
+	a {
+		color:  $ancorcolor;
+	}
+	
+}
+.headerButton:hover{
+	color: $greencolor !important;
+	border: 1px solid $greencolor !important;
+}
+
+.PostButton {
+	border: none;
+	color: white;
+	background-color: $greencolor;
+	&:hover {
+		background-color: #198107 !important;
+		color: white;
+	}
+}
+.mainbody {
+	background-color: $bodybgcol;
+	
+}
+.circleGraph, .lineGraphDiv{
+	border-radius: 5.3px;
+  box-shadow: 0 0 9px 0 rgba(237, 242, 244, 0.65);
+}
+td,
+button {
+	color: $ancorcolor;
+}
+// .table-striped > tbody > tr:nth-of-type(odd) > * {
+// 	--bs-table-accent-bg: #fafaff;
+// 	color: $ancorcolor;
+// }
+.tableHover tbody tr:hover {
+	background: #f0f0ff !important;
+}
+.table > :not(caption) > * > * {
+	border-bottom-width: 0px;
+}
+
+@media screen and (max-width:970px) {
+	.tableResponse{
+		width: 970px;
+	}
+}
+.tableHover tbody tr td{
+	padding-bottom: 6.5px !important;
+		font-size: 12px !important;
+		.font-14{
+			font-size: 14px !important;
+		}
+	}
+	.tableHover thead tr td{
+		padding-bottom: 6.5px !important;
+			font-size: 12px !important;
+			
+		}
+// .tableDash{
+// 	.dropdown-menu{
+// 		min-width: 5rem;
+// 	}
+// }
+.tableWidthbottom {
+	border-bottom: 1px solid #b5b5c3;
+}
+
+.cardButtons {
+	background-color: $colorlight;
+	color: $ancorcolor;
+	border: 2px solid transparent !important;
+
+	&:hover {
+		color: $greencolor !important;
+		border: 2px solid $greencolor !important;
+		background-color:$colorlight ;
+	}
+}
+.onactive {
+	color: white !important;
+	// border: 2px solid $greencolor !important;
+background-color: $greencolor;
+}
+.TotalQuota {
+	line-height: 1.3 !important;
+}
+.bgquota {
+	background-color: $colorlight;
+}
+@mixin circlebtn {
+	width: 8.9px;
+	height: 8.9px;
+	border-radius: 50%;
+}
+.circlebtn {
+	@include circlebtn();
+	background-color: $totalListing;
+}
+.circlebtn1 {
+	@include circlebtn();
+	background-color: $free;
+}
+.circlebtn2 {
+	@include circlebtn();
+	background-color: $hot;
+}
+.circlebtn3 {
+	@include circlebtn();
+	background-color: $superhot;
+}
+@mixin statusbuttons {
+	width: 8.9px;
+	height: 8.9px;
+	border-radius: 3px;
+}
+.boxfree {
+	@include statusbuttons();
+	background-color: $free;
+}
+.boxyellow {
+	@include statusbuttons();
+	background-color: $boxyellow;
+}
+.boxred {
+	@include statusbuttons();
+	background-color: $boxred;
+}
+.statusbtnactive {
+	color: $greencolor;
+	border: none;
+	background-color: rgba(55, 183, 33, 0.12);
+	border-radius: 4px;
+}
+.statusbtninactive {
+	color: $boxred;
+	border: none;
+	background-color:rgba(241, 65, 108, 0.12);
+	border-radius: 4px;
+}
+.statusbtnpending {
+	color: $boxyellow;
+	border: none;
+	background-color: rgba(255, 182, 0, 0.12);
+	border-radius: 4px;
+}
+.Actions {
+	color: $ancorcolor;
+	border-radius: 5px;
+	border: 1px solid $ancorcolor;
+}
+.active > .page-link,
+.page-link.active {
+	z-index: 3;
+	color: var(--bs-pagination-active-color);
+	background-color: $greencolor;
+	border-color: $greencolor;
+}
+
+ .pagination {
+	--bs-pagination-color: black !important;
+	--bs-pagination-border-color: none;
+ }
+.GraphDropdown{
+	font-size: 22px;
+	cursor:pointer !important;
+}
+.profiledrop {
+	cursor: pointer;
+}
+.lineGraphDiv{
+	width: 56%;
+}
+@media screen and (max-width: 1199.9px) {
+	.lineGraphDiv{
+		width: 100%;
+	}
+}
+.logoutbtn{
+		background-color: $hover !important;
+		border-radius: 4px ;
+		text-align: center;
+		border: none;
+
+		a {
+			color: $fontcolor;
+		}
+	
+		a:hover {
+			color: white !important;
+			background-color: $hover;
+		}
+	}
+	.logoutbtn:hover{
+		background-color:$hover;
+	}
+	.progress{
+		height: 6px;
+		.progress-bar{
+			
+			border-radius: var(--bs-progress-border-radius);
+		}
+	}
+	/* width */
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: rgb(206, 201, 201);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: $hover;
+	// hover
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #2a8d19;
+}
+.addControlBtn{
+	width: 24.7px;
+	height: 24.7px;
+	border-radius: 2.3px;
+	background-color: #f3f6f9;
+	border: none;
+}
+.filterSearchbtn{
+border-color: transparent;
+background-color: transparent;
+font-size: 12px;
+color: $ancorcolor;
+&:hover{
+border-color:transparent  !important;
+}}
+
+.exclamationDiv{
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	color: #ffc700;
+	background-color:#fff8dd ;
+	font-size: 60px;
+}
+
+.Cancelbtn{
+	&:hover{
+		border-color: transparent!important;
+
+		}
+}
+.Deletebtn{
+	background-color: $boxred;
+	border: none;
+	&:hover{
+		background-color: $boxred !important;
+	}
+}
+@media screen and (max-width:576px) {
+	.modal-content{
+		width: 100%!important;
+	}
+}

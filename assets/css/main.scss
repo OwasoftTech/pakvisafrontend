@@ -7,211 +7,264 @@ $pink: #ff2c63;
 $orange: #fdc703;
 $red: #f73859;
 $price: #0b244f;
-$addaddedcol:#afafaf;
-$textColor:#61797d;
+$addaddedcol: #afafaf;
+$textColor: #61797d;
 
 @font-face {
-    font-family: PlayfairBold;
-    src: url("Fonts/Playfair/PlayfairDisplay-Bold.ttf");
-    font-display: swap;
+	font-family: PlayfairBold;
+	src: url("../Fonts/Playfair/PlayfairDisplay-Bold.ttf");
+	font-display: swap;
 }
-
+@font-face{
+	font-family: InterV;
+	src : url('../Fonts/Inter/static/Inter-Light.ttf');
+	font-display: swap;
+}
+*{
+	font-family: InterV;
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: PlayfairBold !important;
-    font-weight: bold;
+	font-family: PlayfairBold ;
+	font-weight: bold;
 }
 
 // navbar
-.nav-item {
-    padding-right: 25px;
+.mainNavItem {
+	padding-right: 25px;
 
-    a {
-        color: $fontcolor !important;
-        line-height: 49px;
-        border-bottom: 3px solid transparent;
+	a {
+		color: $fontcolor !important;
+		line-height: 49px;
+		border-bottom: 3px solid transparent;
 
-        &:hover {
-            color: white !important;
-            border-bottom: 3px solid white;
-        }
-    }
+		&:hover {
+			color: white !important;
+			border-bottom: 3px solid white;
+		}
+	}
 }
 
 .login {
-    a {
-        color: #fff;
-        border-bottom: 3px solid transparent;
-    }
+	a {
+		color: #fff;
+		border-bottom: 3px solid transparent;
+	}
 
-    a:hover {
-        color: #fff !important;
-        border-bottom: 3px solid #fff;
-    }
+	a:hover {
+		color: #fff !important;
+		border-bottom: 3px solid #fff;
+	}
 }
 .signup {
-    width: 93px;
-    background-color: $hover;
-    border-radius: 4px;
-    text-align: center;
+	width: 93px;
+	background-color: $hover;
+	border-radius: 4px;
+	text-align: center;
 
-    a {
-        color: $fontcolor;
-        border-bottom: 3px solid transparent;
-    }
+	a {
+		color: $fontcolor;
+		border-bottom: 3px solid transparent;
+	}
 
-    a:hover {
-        color: white !important;
-    }
+	a:hover {
+		color: white !important;
+	}
 }
 
 .bg-transparen {
-    transition: 0.75s ease !important;
-    background-color: transparent !important;
+	transition: 0.75s ease !important;
+	background-color: transparent !important;
+	.active {
+		color: white !important;
+		border-bottom: 3px solid white;
+
+		
+	}
 }
 
 .bg-transparen.scrolled {
-    background: white !important;
-    color: black !important;
+	background: white !important;
+	color: black !important;
 
-    .nav-item {
-        a {
-            color: black !important;
+	.mainNavItem {
+		a {
+			color: black !important;
 
-            &:hover {
-                color: black !important;
-                border-bottom: 3px solid black;
-            }
-        }
-    }
+			&:hover {
+				color: black !important;
+				border-bottom: 3px solid black;
+			}
+		}
+	}
+	.active {
+		color: black !important;
+		border-bottom: 3px solid black;
 
+		
+	}
 
-    .login {
-        a {
-            color: black;
-        }
+	.login {
+		a {
+			color: black;
+		}
 
-        a:hover {
-            color: black !important;
-            border-bottom: 3px solid black;
-        }
-    }
+		a:hover {
+			color: black !important;
+			border-bottom: 3px solid black;
+		}
+	}
 
-    .signup {
-        background-color: $hover;
+	.signup {
+		background-color: $hover;
 
-        a {
-            color: white;
-        }
+		a {
+			color: white;
+		}
 
-        a:hover {
-            color: black !important;
-        }
-    }
+		a:hover {
+			color: black !important;
+		}
+	}
 }
 
-@media screen and (max-width:991.5px) {
-    .bgcolor {
-        background-color: white !important;
+@media screen and (max-width: 991.5px) {
+	.bgcolor {
+		background-color: white !important;
+li{
+	width: 130px;
+}
+		a {
+			color: black !important;
+		}
+	}
 
-        a {
-            color: black !important;
-        }
-    }
+	.signup {
+		margin-top: 20px;
+	}
+	.active{
+		color: black !important;
 
-    .signup {
-        margin-top: 20px;
-    }
+	}
+	.bg-transparen .active {
+		color: black !important; 
+		border-bottom: 3px solid black; 
+   }
+   
+}
+
+@media screen and (max-width: 991.5px) {
+	.navbarBgColor {
+li{
+	width: 250px;
+}
+	}
+
+   
 }
 
 // navbar
+.colpink {
+	color: $pink;
+}
+
+.colGreen {
+	color: $hover;
+}
 
 .topTexture {
-    background-image: url("/assets/images/background/texture3.png");
-    background-repeat: repeat-x;
-    height: 100px;
-    transform: translateY(-60px);
-    margin-bottom: -60px;
-    position: relative;
-    z-index: 10;
+	background-image: url("../images/background/texture3.png");
+	background-repeat: repeat-x;
+	height: 100px;
+	transform: translateY(-60px);
+	margin-bottom: -60px;
+	position: relative;
+	z-index: 10;
 
-    @media screen and (max-width:575px) {
-        display: none;
-    }
+
 }
 
 .footerTexture {
-    background-image: url("/assets/images/background/texture4.png");
-    background-repeat: repeat-x;
-    height: 100px;
-    transform: translateY(60px);
-    margin-top: -60px;
+	background-image: url("../images/background/texture4.png");
+	background-repeat: repeat-x;
+	height: 100px;
+	transform: translateY(60px);
+	margin-top: -60px;
 }
 
 .footer {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.6)), url("/assets/images/background/footerbg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.6)), url("../images/background/footerbg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 
-    p {
-        text-align: justify;
-    }
+	p {
+		text-align: justify;
+	}
 
-    form {
-        input {
-            background-color: #232f35;
-            counter-reset: #fff;
-            outline: none;
-            border: none;
-        }
+	form {
+		input {
+			background-color: #232f35;
+			counter-reset: #fff;
+			outline: none;
+			border: none;
+		}
 
-        button {
-            background-color: $hover;
-            border: $hover 2px solid;
-            max-width: 150px;
+		button {
+			background-color: $hover;
+			border: $hover 2px solid;
+			max-width: 150px;
 
-            &:hover {
-                background-color: transparent !important;
-                border: $hover 2px solid !important;
-                color: $hover !important;
-            }
-        }
-    }
+			&:hover {
+				background-color: transparent !important;
+				border: $hover 2px solid !important;
+				color: $hover !important;
+			}
+		}
+	}
 
-    .socialIcon {
-        a {
-            background-color: $fontcolor2;
-            border-radius: 50%;
+	.socialIcon {
+		a {
+			background-color: $fontcolor2;
+			border-radius: 50%;
 
-            &:hover {
-                background-color: $hover;
-            }
-        }
-    }
+			&:hover {
+				background-color: $hover;
+			}
+		}
+	}
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: rgb(206, 201, 201); 
+	width: 5px;
+}
 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: $hover; 
-    // hover
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #2a8d19; 
-  }
+/* Track */
+::-webkit-scrollbar-track {
+	background: rgb(206, 201, 201);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: $hover;
+	// hover
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #2a8d19;
+}
+// .form-control:focus{
+//     background-color: #f2f4f7 !important;
+//     border-color: black !important;
+// 	outline: none !important;
+// 	// border: 2px solid black !important;
+// }
+ .form-control:focus, .form-select:focus{
+        background-color: #f2f4f7 !important;
+        box-shadow: none !important;
+    }

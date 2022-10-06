@@ -1,0 +1,76 @@
+.signuppage {
+  background-image: url("../images/background/login.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.btnSignUp {
+  background-color: #37b721 !important;
+}
+
+.signupForm {
+  box-shadow: 0 8px 12px 0 rgba(212, 213, 216, 0.75);
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 510px;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding-bottom: 0px !important;
+}
+
+.bgcolordark {
+  background-color: #f2f4f7;
+  border-radius: 0.375rem;
+}
+
+.formSignup input, .formSignup select {
+  background-color: #f2f4f7;
+  padding: 15px;
+  border: none;
+}
+.formSignup .form-check-input {
+  padding: 10px !important;
+  margin-top: 7px !important;
+}
+.formSignup ::-moz-placeholder {
+  color: #999999;
+}
+.formSignup :-ms-input-placeholder {
+  color: #999999;
+}
+.formSignup ::placeholder {
+  color: #999999;
+}
+.formSignup select {
+  color: #999999 !important;
+  border-radius: 0.375rem;
+}
+
+.straightLine {
+  height: 1px;
+  background-color: #999999;
+  margin-top: 3px;
+}
+
+.bi-google {
+  color: white;
+}
+
+.btngoogle {
+  background-color: #dc3c2a;
+}
+.btngoogle:hover {
+  background-color: #dc3c2a;
+}
+
+.btnfacebook {
+  background-color: #1877f2;
+}
+.btnfacebook:hover {
+  background-color: #1877f2;
+}
+
+.uploadFile {
+  border-radius: 6.2px;
+  background-color: #f2f4f7;
+}/*# sourceMappingURL=signup.css.map */

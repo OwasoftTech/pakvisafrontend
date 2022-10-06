@@ -1,0 +1,157 @@
+
+$greencolor: #37b721;
+$ancorcolor: #7e8299;
+$headerbg: #024751;
+$fontcolor: #e8eaed;
+$fontcolor2: #777777;
+$hover: #37b721;
+$login: #024751;
+$pink: #ff2c63;
+$orange: #fdc703;
+$red: #f73859;
+$price: #0b244f;
+$addaddedcol:#afafaf;
+$textColor:#61797d;
+$aboutbg:#fdfdfd;
+body{
+    background-color: $aboutbg;
+}
+.AboutusHead {
+    background-image: url('../images/Aboutus/topImage.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    // height: 537px;
+    padding-top: 153.6px;
+    padding-bottom: 70px;
+}
+
+.topTextureabout {
+	background-image: url("../images/Aboutus/textureup.png");
+	background-repeat: repeat-x;
+	height: 140px;
+	transform: translateY(-135px);
+	margin-bottom: -135px;
+    margin-top: 20px;
+	position: relative;
+	z-index: 10;
+}
+
+.KnowMoreAbout{
+    background-image: url('../images/Aboutus/knowmorebg.jpg');
+    // background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 80%;
+    p{
+        line-height: 1.75;
+    }
+    // .Knownorebgimg{
+      
+    // }
+}
+.BottomTextureabout{
+    background-image: url("../images/Aboutus/texturebottom.png");
+	background-repeat: repeat-x;
+	height: 100px;
+	transform: translateY(76px);
+	margin-top: -76px;
+	position: relative;
+	z-index: 10;
+}
+.FeedbackAbout{
+    background-image: url('../images/Aboutus/feedbackbd.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    // height: 500px;
+}
+.titleabout {
+    color: white;
+
+    span {
+        color: $hover;
+    }
+}
+.User1img{
+    transform: translateX(25px);
+ 
+}
+.User2img{
+    z-index: 99;
+}
+.User3img{
+    transform: translateX(-25px);
+ 
+}
+.qoutsdiv{
+    transform: translateY(52px);
+    margin-top: -52px !important;
+    .rightQoute{
+    transform: translateY(85px);
+
+    }
+}
+.stars5Checked{
+    color: #ffdd00;
+}
+
+@media screen and (max-width:510px) {
+    .Knownorebgimg img{
+        width: 80%;
+    }
+}
+.ancorcolor{
+	color: $ancorcolor;
+}
+.greenColor {
+	color: $greencolor;
+}
+.Contactinfocards{
+    width: 314px;
+    height: 282px;
+    border-radius: 4px;
+  box-shadow: 0 4px 10px 0 rgba(186, 195, 223, 0.2);
+  background-color: #fff;
+  padding: 2.2rem!important;
+}
+.GetMoreInfo{
+    background-image: url('../images/Aboutus/backtexture.png');
+    background-position: 48% 12%;
+    background-repeat: no-repeat;
+}
+
+.contactus_form {
+    .inputNumber{
+        margin-left: -5px;
+    }
+   select, input, textarea {
+       background-color: #f3f6f9;
+       border-radius: 4px;
+       border: none;
+   }
+   .PostButton {
+	border: none;
+	color: white;
+	background-color: $greencolor;
+	&:hover {
+		background-color: #198107 !important;
+		color: white;
+	}
+}
+}
+.googleMAP{
+    border-radius: 4px;
+    width: 99%;
+    height: 100%;
+    // margin-right: 20px;
+}
+@media screen and (max-width:992.5px) {
+    .googleMAP{
+        height: 605px;
+    }
+
+}
+@media screen and (max-width:570px) {
+    .googleMAP{
+        width: 90%;
+        height: 500px;
+    }
+}

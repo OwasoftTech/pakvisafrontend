@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pakvisa.com</title>
+		<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./assets/css/dashboard.css" />
+		<link rel="stylesheet" href="./assets/css/main.css" />
+		<link rel="stylesheet" href="./assets/css/dashboard_postadver.css" />
+		<link rel="shortcut icon" href="./assets/images/Favicon/Pak visa.png" type="image/x-icon" />
+
+		<!-- radialcharts -->
+		<script src="https://cdn.jsdelivr.net/npm/react@16.12/umd/react.production.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/react-dom@16.12/umd/react-dom.production.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/prop-types@15.7.2/prop-types.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+		<script src="https://cdn.jsdelivr.net/npm/react-apexcharts@1.3.6/dist/react-apexcharts.iife.min.js"></script>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark navbarBgColor">
+			<div class="container-xxl">
+				<a class="navbar-brand" href="#"><img src="./assets/images/Favicon/Pak visa.png" class="logoImage" alt="" srcset="" /></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item ps-3">
+							<a class="nav-link NavAncorColor px-4" aria-current="page" href="./Dashboard.html">Dashboard</a>
+						</li>
+						<li class="nav-item ps-5">
+							<a class="nav-link NavAncorColor btn DashboardBtn" href="./Manage_Advert.html">Manage Advertisment</a>
+						</li>
+						<li class="nav-item ps-5">
+							<a class="nav-link NavAncorColor" href="./Agencyprofile.html">My Account & Profile</a>
+						</li>
+						<li class="nav-item ps-5">
+							<a class="nav-link NavAncorColor" href="#">Advertise</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav mb-2 mb-lg-0 ms-lg-0 ms-5 align-items-lg-center align-items-start">
+						<li>
+							<div class="dropdown">
+								<div class="d-flex profiledrop" data-bs-toggle="dropdown" aria-expanded="false">
+									<span class="mb-0 me-3 d-flex justify-content-end NavAncorColoruser">Zafer</span>
+									<img src="./assets/images/Gallery/galleryimg1.webp" class="ProfilePic" alt="" />
+								</div>
+								<ul class="dropdown-menu dropdown-menu-end">
+									<li><a class="dropdown-item" href="./Agencyprofile.html">Profile</a></li>
+									<li><a class="dropdown-item" href="#">Account Setting</a></li>
+									<br />
+									<li class="text-center">
+										<button class="logoutbtn"><a class="dropdown-item btn logoutbtn" href="./login.html">Logout</a></button>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="mainbody">
+			<div class="header">
+				<div class="container-xxl">
+					<div class="d-flex justify-content-sm-between justify-content-center flex-wrap coltainer-fluid px-4">
+						<div class="mt-3">
+							<a href="" class="btn headerButton px-3 me-3 mb-3">Cart</a>
+							<a href="" class="btn headerButton px-3 me-3 mb-3">Biling</a>
+							<a href="" class="btn headerButton px-3 me-3 mb-3">Email Alert</a>
+							<a href="" class="btn headerButton px-3 me-3 mb-3">Advertise</a>
+						</div>
+						<div class="mt-3">
+							<a href="./dashboard_postadvert.html" class="btn text-white float-end PostButton px-3 mb-3">Submit</a>
+							<a href="" class="btn text-dark mb-3">Back</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-xxl p-0 postAddMainDiv">
+				<div class="d-flex my-4">
+					<h6 class="headingColor ps-2 mb-0">New Advertisment</h6>
+					<p class="NavTextColor mb-0 ms-5">Please Enter your information and submit</p>
+				</div>
+				<nav>
+					<div class="nav nav-tabs PostAdd" id="nav-tab " role="tablist">
+						<button class="nav-link active post_BasicInfo px-5 py-3 me-2" id="nav-basic-tab" data-bs-toggle="tab" data-bs-target="#nav-basic" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+							<div class="d-flex">
+								<div class="basicno1 d-flex justify-content-center align-items-center me-3 mt-1">1</div>
+								<div class="">
+									<p class="mb-0 headingcolor BasicinfoTab">Basic Information</p>
+									<p class="mb-0 font_12 basicinfodetail">All Basic Information about Ad.</p>
+								</div>
+							</div>
+						</button>
+						<button class="nav-link post_price_loc px-5 py-3 me-2" id="nav-pricing-tab" data-bs-toggle="tab" data-bs-target="#nav-pricing" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+							<div class="d-flex">
+								<div class="basicno2 d-flex justify-content-center align-items-center me-3 mt-1">2</div>
+								<div class="">
+									<p class="mb-0 headingcolor BasicinfoTab">Pricing & Location</p>
+									<p class="mb-0 font_12 basicinfodetail">Accounts & Pricing information</p>
+								</div>
+							</div>
+						</button>
+						<button class="nav-link post_price_loc px-5 py-3 me-2" id="nav-image-tab" data-bs-toggle="tab" data-bs-target="#nav-image" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+							<div class="d-flex">
+								<div class="basicno2 d-flex justify-content-center align-items-center me-3 mt-1">3</div>
+								<div class="">
+									<p class="mb-0 headingcolor BasicinfoTab">Image Section</p>
+									<p class="mb-0 font_12 basicinfodetail">Related images Section</p>
+								</div>
+							</div>
+						</button>
+						<button class="nav-link post_price_loc px-5 py-3 me-2" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+							<div class="d-flex">
+								<div class="basicno2 d-flex justify-content-center align-items-center me-3 mt-1">4</div>
+								<div class="">
+									<p class="mb-0 headingcolor BasicinfoTab">Contact Details</p>
+									<p class="mb-0 font_12 basicinfodetail">Advertiser Contact Details</p>
+								</div>
+							</div>
+						</button>
+					</div>
+				</nav>
+				<div class="tab-content pt-5 bg-white" id="nav-tabContent">
+					<!-- First Tab -->
+					<div class="tab-pane fade show active" id="nav-basic" role="tabpanel" aria-labelledby="nav-basic-tab" tabindex="0">
+						<div class="BasicInfoDetails">
+							<h5 class="font-interMed ms-5">Basic Information</h5>
+							<div class="col-lg-8 basic_form m-auto ps-md-5 ps-3 pb-5">
+								<form action="" class="me-md-5 me-3">
+									<div class="mb-3 d-md-flex align-items-center">
+										<label for="" class="form-label AllLabels">Add Title</label>
+										<input type="text" class="form-control ps-4 py-2 w-100" name="" id="" placeholder="Please Enter" />
+									</div>
+
+									<div class="mb-3 d-md-flex align-items-center">
+										<label for="" class="form-label AllLabels">Select Type</label>
+										<select class="FormDropDown form-select px-4 py-2 w-100" name="" id="">
+											<option>Please Select</option>
+										</select>
+									</div>
+
+									<div class="mb-3 d-md-flex mb-3">
+										<label for="" class="form-label mt-2 AllLabels">Description</label>
+										<textarea class="form-control ps-4 py-2 w-100" name="" id="" rows="6"></textarea>
+									</div>
+									<div class="col-md-9 float-md-end mb-2">
+										<div class="line border-1 border-bottom"></div>
+									</div>
+									<div class="w-100 d-flex justify-content-end">
+										<button type="button" class="btn PostButton px-4 py-2 ms-auto">Next</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<!-- Second Tab -->
+					<div class="tab-pane fade" id="nav-pricing" role="tabpanel" aria-labelledby="nav-pricing-tab" tabindex="0">
+						<div class="BasicInfoDetails">
+							<h5 class="font-interMed ms-5">Pricing & Location</h5>
+							<div class="col-lg-8 basic_form m-auto ps-md-5 ps-3 pb-5">
+								<form action="" class="me-md-5 me-3">
+									<div class="mb-3 d-md-flex align-items-center">
+										<label for="" class="form-label AllLabels">Price</label>
+										<input type="number" class="form-control ps-4 py-2 w-100" min="0" name="" id="" placeholder="Please Enter" />
+									</div>
+
+									<div class="mb-3 d-md-flex align-items-center">
+										<label for="" class="form-label AllLabels">Select Country</label>
+										<select class="FormDropDown form-select px-4 py-2 w-100" name="" id="">
+											<option>Please Select</option>
+										</select>
+									</div>
+									<div class="mb-3 d-md-flex align-items-center">
+										<label for="" class="form-label AllLabels">Select Province</label>
+										<select class="FormDropDown form-select px-4 py-2 w-100" name="" id="">
+											<option>Please Select</option>
+										</select>
+									</div>
+									<div class="mb-3 d-md-flex align-items-center">
+										<label for="" class="form-label AllLabels">Select Area</label>
+										<select class="FormDropDown form-select px-4 py-2 w-100" name="" id="">
+											<option>Please Select</option>
+										</select>
+									</div>
+									<div class="mb-3 d-md-flex align-items-center">
+										<label for="" class="form-label AllLabels">Select Sub Area</label>
+										<select class="FormDropDown form-select px-4 py-2 w-100" name="" id="">
+											<option>Please Select</option>
+										</select>
+									</div>
+
+									<div class="col-md-9 float-md-end mb-2">
+										<div class="line border-1 border-bottom"></div>
+									</div>
+									<div class="w-100 d-flex justify-content-end">
+										<button type="button" class="btn PostButton px-4 py-2 ms-auto">Next</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<!-- Third Tab -->
+					<div class="tab-pane fade" id="nav-image" role="tabpanel" aria-labelledby="nav-image-tab" tabindex="0">
+						<div class="BasicInfoDetails">
+							<h5 class="font-interMed ms-5">Add Images</h5>
+							<div class="col-lg-8 basic_form m-auto ps-md-5 ps-3 pb-5">
+								<form action="" class="me-md-5 me-3">
+									<div class="mb-3 d-md-flex uploadFileMainDiv">
+										<label class="form-label AllLabels m-0 mt-2">Add Images</label>
+
+										<label class="btn btn-default btn-file border-0 p-0">
+											<div class="custom-upload d-flex justify-content-center align-items-center">
+												<img src="./assets/images/icons/uploa2.png" alt="" />
+											</div>
+
+											<input type="file" style="display: none" required />
+										</label>
+									</div>
+									<div class="mb-3 d-md-flex align-items-center">
+										<label for="" class="form-label AllLabels">Video</label>
+										<input type="text" class="form-control ps-4 py-2 w-100" name="" id="" placeholder="Video url" />
+									</div>
+									<div class="col-md-9 float-md-end mb-2 mt-4 pt-5">
+										<div class="line border-1 border-bottom pt-5"></div>
+									</div>
+									<div class="w-100 d-flex justify-content-end">
+										<button type="button" class="btn PostButton px-4 py-2 ms-auto">Next</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<!-- Fourth tab -->
+					<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+						<div class="BasicInfoDetails">
+							<h5 class="font-interMed ms-5">Add Images</h5>
+							<div class="col-lg-8 basic_form m-auto ps-md-5 ps-3 pb-5">
+								<form action="" class="me-md-5 me-3">
+									<div class="mb-3 d-md-flex align-items-center">
+										<label for="" class="form-label AllLabels">Listing Owner</label>
+										<select class="FormDropDown form-select px-4 py-2 w-100" name="" id="">
+											<option>Please Select</option>
+										</select>
+									</div>
+									<div class="mb-3 d-md-flex align-items-center">
+										<label for="" class="form-label AllLabels">Add Title</label>
+										<input type="text" class="form-control ps-4 py-2 w-100" name="" id="" placeholder="Please Enter" />
+									</div>
+									<div class="mb-3 d-md-flex align-items-center">
+										<label for="" class="form-label AllLabels AllLabels2">Landline Phone</label>
+
+										<div class="row justify-content-center align-items-center w-100 g-2">
+											<div class="col-3">
+												<select class="FormDropDown form-select ps-4 py-2" name="" id="">
+													<option>+92</option>
+												</select>
+											</div>
+											<div class="col-3">
+												<select class="FormDropDown form-select ps-4 py-2" name="" id="">
+													<option>51</option>
+												</select>
+											</div>
+											<div class="col-6">
+												<input type="text" class="form-control ps-4 py-2 w-100" name="" id="" placeholder="1234567" />
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-3 d-md-flex align-items-center">
+										<label for="" class="form-label AllLabels AllLabels2">Mobile Number</label>
+
+										<div class="row justify-content-center align-items-center w-100 g-2">
+											<div class="col-3">
+												<select class="FormDropDown form-select ps-4 py-2" name="" id="">
+													<option>+92</option>
+												</select>
+											</div>
+
+											<div class="col-9">
+												<input type="text" class="form-control ps-4 py-2 w-100" name="" id="" placeholder="1234567" />
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-3 d-md-flex align-items-center">
+										<label for="" class="form-label AllLabels">Email Address</label>
+										<input type="email" class="form-control ps-4 py-2 w-100" name="" id="" placeholder="Please Enter" />
+									</div>
+
+									<div class="col-md-9 float-md-end mb-2">
+										<div class="line border-1 border-bottom"></div>
+									</div>
+									<div class="w-100 d-flex justify-content-end">
+										<button type="button" class="btn PostButton px-4 py-2 ms-auto"  data-bs-toggle="modal" data-bs-target="#exampleModalMembership">Submit</button>
+									</div>
+
+									 <!-- Modal -->
+  <div class="modal  fade" id="exampleModalMembership" tabindex="0" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog m-auto  modal-dialog-centered  justify-content-center Membershipcard">
+      <div class="modal-content  ">
+      
+        <div class="modal-body  ">
+            <section class="pricing-table ">
+                <div class="container">
+                    <div class="modal-header border-bottom-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                    <div class="block-heading text-center pb-5">
+                      <h2 class="greenColor">Chose your Plan...!</h2>
+                      <p>Please chose the plan that works best for you...</p>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-5 col-lg-4 mb-4 cardsSubs">
+                            <div class="itemSubs active h-100 m-auto p-4  ">
+                                <div class="heading pb-4">
+                                    <h5>NORMAL SUBSCRIPTION</h5>
+                                </div>
+                               <ul class="font_12 ProvidedServices ps-3">
+                                <li class="pb-3"> Your Ad is visible at Bottom level. </li>
+                                <li class="pb-3">This is valid for 1 Month only, after that it will be Removed from Listing</li>
+                                <li class="pb-3">1 Quota will be consumed, your have 24 Quota for listing.</li>
+                                <li class="pb-3">05 Credits will be consumed, your 15 Normal Credits Remaining.</li>
+                            </ul>
+                            <div class="d-flex justify-content-center">
+                      <button type="button" class="btn  SubsButton px-4 text-white">Subscribe</button>
+                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-lg-4 mb-4">
+                                <div class="itemSubs h-100 m-auto p-4 ">
+                                    <div class="heading pb-4">
+                                        <h5>Superhot Subscription</h5>
+                                    </div>
+                                   <ul class="font_12  ProvidedServices ps-3 ">
+                                    <li class="pb-3"> Your Ad is visible at top level. </li>
+                                    <li class="pb-3">This is valid for 24 Hours only, after that it will be back to Normal Ad.</li>
+                                    <li class="pb-3">1 Quota will be consumed, your have 24 Quota for listing.</li>
+                                    <li class="pb-3">15 Credits will be consumed, your 35 Superhot Credits Remaining.</li>
+                                </ul>
+                                <div class="d-flex justify-content-center">
+                          <button type="button" class="btn  PostButton px-4 text-white">Subscribe</button>
+                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-5 col-lg-4 mb-4">
+                                <div class="itemSubs h-100 m-auto p-4 ">
+                                    <div class="heading pb-4">
+                                        <h4>Hot Subscription</h4>
+                                    </div>
+                                   <ul class="font_12 ProvidedServices ps-3">
+                                    <li class="pb-3"> Your Ad is visible at Middle level. </li>
+                                    <li class="pb-3">This is valid for 36 Hours only, after that it will be back to Normal Ad.</li>
+                                    <li class="pb-3">1 Quota will be consumed, your have 24 Quota for listing.</li>
+                                    <li class="pb-3">10 Credits will be consumed, your 20 Hot Credits Remaining.</li>
+                                </ul>
+                                <div class="d-flex justify-content-center">
+                          <button type="button" class="btn  PostButton px-4 text-white">Subscribe</button>
+                        </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+        </div>
+        <!-- <div class="modal-footer  border-top-0 d-flex justify-content-evenly">
+          <button type="button" class="btn Cancelbtn headingColor" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn Deletebtn px-5 text-white">Delete</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+									<!-- Button trigger modal -->
+
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="./assets/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
